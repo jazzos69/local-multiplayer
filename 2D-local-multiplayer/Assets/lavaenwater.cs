@@ -7,6 +7,12 @@ public class lavaenwater : MonoBehaviour
     public Transform firePlayerSpawnPoint;
     public Transform waterPlayerSpawnPoint;
 
+    void Start()
+    {
+        waterPlayerSpawnPoint.position = new Vector3(6, -4, 0);  
+        firePlayerSpawnPoint.position = new Vector3(-6, -4, 0);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
