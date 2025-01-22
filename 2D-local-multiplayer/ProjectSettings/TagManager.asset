@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - player1
+  - ground
+  - player2
+  - Ground
+  - water
+  - lava
+  - waterPlayerSpawnPoint
+  - firePlayerSpawnPoint
   layers:
   - Default
   - TransparentFX
