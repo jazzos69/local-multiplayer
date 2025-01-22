@@ -8,6 +8,10 @@ TagManager:
   - ground
   - player2
   - Ground
+  - water
+  - lava
+  - waterPlayerSpawnPoint
+  - firePlayerSpawnPoint
   layers:
   - Default
   - TransparentFX
