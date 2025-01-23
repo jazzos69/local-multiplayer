@@ -17,6 +17,7 @@ TagManager:
   - firekeycount
   - waterkeycount
   - exitdoor
+  - exitdoor2
   layers:
   - Default
   - TransparentFX

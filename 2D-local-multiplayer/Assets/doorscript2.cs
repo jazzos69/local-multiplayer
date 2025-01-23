@@ -1,12 +1,14 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class doorscript : MonoBehaviour
+public class doorscript2 : MonoBehaviour
 {
     public string startscherm; // Naam van de volgende scene
     private bool isOpen = false;
     public KeyScript Keys;
-    public bool firecheck = false;
+    public bool watercheck = false;
     public void Open()
     {
         isOpen = true;
@@ -20,9 +22,9 @@ public class doorscript : MonoBehaviour
             SceneManager.LoadScene(startscherm);
             Debug.Log("Player entered the door!");
         }
-        if (gameObject.CompareTag("exitdoor2") && Keys.fireKey == true)
+        if (gameObject.CompareTag("exitdoor") && Keys.fireKey == true)
         {
-            firecheck = true;
+            watercheck = true;
         }
     }
 }

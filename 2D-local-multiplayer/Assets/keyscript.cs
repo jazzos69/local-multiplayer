@@ -1,10 +1,12 @@
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class KeyScript : MonoBehaviour
 {
-    public ElementType keyType; 
-
+    public ElementType keyType;
+    public bool fireKey;
+    public bool waterKey;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -19,6 +21,7 @@ public class KeyScript : MonoBehaviour
                         {
                             Destroy(gameObject);
                             Debug.Log("Fire player has the fire key!");
+                            fireKey = true;
                         }
                         break;
                     case ElementType.Water:
@@ -26,6 +29,7 @@ public class KeyScript : MonoBehaviour
                         {
                             Destroy(gameObject);
                             Debug.Log("Water player has the water key!");
+                            waterKey = true;
                         }
                         break;
                        
