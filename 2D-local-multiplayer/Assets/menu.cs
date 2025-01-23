@@ -1,8 +1,8 @@
-using UnityEngine;
-using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 public class menu : MonoBehaviour
 {
     public Button menuButton ;
@@ -15,6 +15,6 @@ public class menu : MonoBehaviour
 
     void TaskOnClick()
     {
-        SceneManager.LoadScene("startscreen");
+        SceneManager.LoadScene("startscherm!");
     }
 }
