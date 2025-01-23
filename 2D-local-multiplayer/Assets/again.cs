@@ -3,18 +3,18 @@ using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class StartGame : MonoBehaviour
+public class start : MonoBehaviour
 {
-    public Button StartButton;
+    public Button againButton;
 
     void Start()
     {
-        Button btn = StartButton.GetComponent<Button>();
+        Button btn = againButton.GetComponent<Button>();
         btn.onClick.AddListener(TaskOnClick);
     }
 
     void TaskOnClick()
     {
-        SceneManager.LoadScene("gamescreen");
+        SceneManager.LoadScene("startscreen");
     }
 }

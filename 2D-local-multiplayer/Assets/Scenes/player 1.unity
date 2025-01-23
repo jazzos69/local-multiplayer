@@ -257,6 +257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3793269f968147347862a54142d5fcdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuButton: {fileID: 47974990}
 --- !u!1 &690355558
 GameObject:
   m_ObjectHideFlags: 0
@@ -833,7 +834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f0a30433c98ac94687406237d333e66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartButton: {fileID: 0}
+  againButton: {fileID: 1632676478}
 --- !u!1 &1878868625
 GameObject:
   m_ObjectHideFlags: 0
