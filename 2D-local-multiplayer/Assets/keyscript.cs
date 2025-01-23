@@ -1,31 +1,34 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class keyscript : MonoBehaviour
+public class KeyScript : MonoBehaviour
 {
+    public ElementType keyType; 
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
         if (collision.CompareTag("Player"))
         {
-            // haalt player element voor collision
             PlayerElement playerElement = collision.GetComponent<PlayerElement>();
-
             if (playerElement != null)
             {
-                if (gameObject.CompareTag("firekey") && playerElement.element == ElementType.Fire)
+                switch (keyType)
                 {
-                    Destroy(gameObject);
-                    Debug.Log("fireplayer has his key");
-                    
-                }
-                else if (gameObject.CompareTag("waterkey") && playerElement.element == ElementType.Water)
-                {
-                    Destroy(gameObject);
-                    Debug.Log("waterplayer has his key");
-                    
+                    case ElementType.Fire:
+                        if (playerElement.element == ElementType.Fire)
+                        {
+                            Destroy(gameObject);
+                            Debug.Log("Fire player has the fire key!");
+                        }
+                        break;
+                    case ElementType.Water:
+                        if (playerElement.element == ElementType.Water)
+                        {
+                            Destroy(gameObject);
+                            Debug.Log("Water player has the water key!");
+                        }
+                        break;
+                       
                 }
             }
         }
