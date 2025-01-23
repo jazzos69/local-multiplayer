@@ -8,6 +8,6 @@ public class BeginScherm : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("Scenes/gamescreen"); 
+        SceneManager.LoadScene("gamescreen"); 
     }
 }

@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class again : MonoBehaviour
+public class start : MonoBehaviour
 {
     public Button againButton;
 
