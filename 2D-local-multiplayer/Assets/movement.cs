@@ -19,7 +19,7 @@ public class movement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
+    //input voor movement functie
     void Update()
     {
         float horizontalInput = 0f;
@@ -45,7 +45,7 @@ public class movement : MonoBehaviour
             rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
         }
     }
-
+    //sprong mogelijkheden (grond)
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Ground"))

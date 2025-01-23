@@ -12,6 +12,8 @@ TagManager:
   - lava
   - waterPlayerSpawnPoint
   - firePlayerSpawnPoint
+  - waterkey
+  - firekey
   layers:
   - Default
   - TransparentFX
