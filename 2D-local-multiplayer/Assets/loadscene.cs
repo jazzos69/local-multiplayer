@@ -8,9 +8,15 @@ public class loadscene : MonoBehaviour
     public bool firecheck;
     public bool watercheck;
 
+    public KeyScript keyScript;
+    private void Start()
+    {
+        keyScript = FindObjectOfType<KeyScript>();
+    }
+
     public void Update()
     {
-        if (firecheck && watercheck)
+        if (keyScript.fireKey && keyScript.waterKey)
         {
             SceneManager.LoadScene("startscherm");
             Debug.Log("Player entered the door!");
